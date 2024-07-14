@@ -1,5 +1,4 @@
-import { useCallback, useState } from 'react'
-import './App.css'
+import { useCallback, useState } from "react";
 import { StackLang } from "./StackLang.ts";
 
 function App() {
@@ -10,10 +9,15 @@ function App() {
 
   return (
     <div>
-      <textarea name="program" value={input} rows={10} onChange={event => setInput(event.target.value)}></textarea>
+      <textarea
+        name="program"
+        value={input}
+        rows={10}
+        onChange={(event) => setInput(event.target.value)}
+      ></textarea>
       <button onClick={handleClickRun}>Run</button>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
